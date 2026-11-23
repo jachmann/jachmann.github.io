@@ -163,7 +163,7 @@ def layout(c, title, desc, body):
 # ---------------------------------------------------------------- pages
 def page_index(c):
     feat = [p for p in PUBLICATIONS if p.get("featured")]
-    hsp = PUBLICATIONS[[p["year"] for p in PUBLICATIONS].index(2026)]
+    hsp = next(p for p in PUBLICATIONS if "HSP 2026" in p["venue"])
     poster = c.url(dict(hsp["links"])["poster"])
     abstract = c.url(dict(hsp["links"])["abstract"])
     body = f"""

@@ -11,7 +11,7 @@ EMAIL_PRIVATE = "tkjachmann@gmail.com"
 
 # ---------------------------------------------------------------------------
 # Publications
-# type: journal | proceedings | talk | poster | thesis
+# type: journal | preprint | proceedings | talk | poster | thesis
 # theme: gaze | infostruct | other   (used to list related work on the research page)
 # links: list of (kind, url). kinds are labelled in LINK_LABELS below.
 # ---------------------------------------------------------------------------
@@ -41,7 +41,24 @@ PUBLICATIONS = [
          venue="Discourse Processes",
          links=[("article", "https://doi.org/10.1080/0163853X.2019.1575140")]),
 
+    # ----- Preprints -----
+    dict(year=2026, type="preprint", theme="infostruct",
+         title="Word Order and Information Status Effects in German: An Expectation-based Perspective",
+         authors="Torsten Kai Jachmann, Francesca Delogu, Matthew W. Crocker, Heiner Drenhaus",
+         venue="Preprint, April 2026",
+         links=[]),
+
     # ----- Peer-reviewed conference papers -----
+    dict(year=2026, type="proceedings", theme="infostruct",
+         title="Expectation-based Linearization: Evidence from German Word-Order and Information Structure",
+         authors="Torsten Kai Jachmann, Francesca Delogu, Matthew W. Crocker, Heiner Drenhaus",
+         venue="Proceedings of the 48th Annual Meeting of the Cognitive Science Society · Rio de Janeiro, Brazil",
+         links=[("paper", "https://escholarship.org/content/qt3vq2d2pj/qt3vq2d2pj.pdf")]),
+    dict(year=2026, type="proceedings", theme="other",
+         title="The influence of dependency length on expectancy: Evidence from reading times and ERPs",
+         authors="Xinyue Jia, Torsten Kai Jachmann, Francesca Delogu, Heiner Drenhaus, Matthew W. Crocker",
+         venue="Proceedings of the 48th Annual Meeting of the Cognitive Science Society · Rio de Janeiro, Brazil",
+         links=[("paper", "https://escholarship.org/content/qt1d70n4nq/qt1d70n4nq.pdf")]),
     dict(year=2023, type="proceedings", theme="infostruct",
          title="Does informativity modulate linearization preferences in reference production?",
          authors="Muqing Li, Noortje J. Venhuizen, Torsten Kai Jachmann, Heiner Drenhaus, Matthew W. Crocker",
@@ -74,11 +91,27 @@ PUBLICATIONS = [
 
     # ----- Posters (with peer-reviewed abstracts) -----
     dict(year=2026, type="poster", theme="infostruct",
+         title="Great Expectations: Constituent Order and Givenness in German and Korean",
+         authors="Torsten Kai Jachmann, Heiner Drenhaus, Francesca Delogu, Myeongju Lee, Matthew W. Crocker",
+         venue="AMLaP 2026 · Saarbrücken, Germany",
+         links=[("abstract", "https://www.uni-saarland.de/fileadmin/upload/fakultaet-p/amlap/Abstracts/submission_230.pdf"),
+                ("materials", "https://doi.org/10.17605/OSF.IO/UCAGK")]),
+    dict(year=2026, type="poster", theme="infostruct",
          title="The interplay of constituent order and givenness in German and Korean: An Expectation-based account",
          authors="Torsten Kai Jachmann, Heiner Drenhaus, Francesca Delogu, Myeongju Lee, Matthew W. Crocker",
          venue="39th Annual Conference on Human Sentence Processing (HSP 2026) · MIT, Cambridge, USA",
          links=[("poster", "assets/pdf/Jachmann-HSP2026-poster.pdf"),
                 ("abstract", "assets/pdf/Jachmann-HSP2026-abstract.pdf")]),
+    dict(year=2025, type="poster", theme="infostruct",
+         title="The Role of Impliedness in Investigating the Interplay of Word Order and Information Status",
+         authors="Torsten Kai Jachmann, Heiner Drenhaus, Francesca Delogu, Matthew W. Crocker",
+         venue="Rational Approaches in Language Science (RAILS 2025) · Saarbrücken, Germany",
+         links=[("abstract", "https://nds.uni-saarland.de/rails2025/submission_66.pdf")]),
+    dict(year=2025, type="poster", theme="other",
+         title="Lossy Context Surprisal: Influence of Linearization on Expectation",
+         authors="Xinyue Jia, Christoph Aurnhammer, Torsten Kai Jachmann, Francesca Delogu, Heiner Drenhaus, Matthew W. Crocker",
+         venue="Rational Approaches in Language Science (RAILS 2025) · Saarbrücken, Germany",
+         links=[("abstract", "https://nds.uni-saarland.de/rails2025/submission_60.pdf")]),
     dict(year=2018, type="poster", theme="gaze", note="slam",
          title="(Dis)Confirmation of Linguistic Prediction by Non-Linguistic Cues",
          authors="Torsten Kai Jachmann, Heiner Drenhaus, Maria Staudte, Matthew W. Crocker",
@@ -127,6 +160,7 @@ PUBLICATIONS = [
 LINK_LABELS = {
     "article": {"en": "Article", "de": "Artikel", "ja": "論文"},
     "data": {"en": "Research data (OSF)", "de": "Forschungsdaten (OSF)", "ja": "研究データ（OSF）"},
+    "materials": {"en": "Materials (OSF)", "de": "Materialien (OSF)", "ja": "研究資料（OSF）"},
     "data_exp12": {"en": "Research data, Exp. 1–2 (OSF)", "de": "Forschungsdaten, Exp. 1–2 (OSF)", "ja": "研究データ・実験1–2（OSF）"},
     "paper": {"en": "Conference paper (PDF)", "de": "Konferenzbeitrag (PDF)", "ja": "会議論文（PDF）"},
     "poster": {"en": "Poster (PDF)", "de": "Poster (PDF)", "ja": "ポスター（PDF）"},
@@ -139,6 +173,7 @@ LINK_LABELS = {
 
 PUB_SECTIONS = [
     ("journal", {"en": "Journal articles", "de": "Zeitschriftenartikel", "ja": "学術誌論文"}),
+    ("preprint", {"en": "Preprints", "de": "Preprints", "ja": "プレプリント"}),
     ("proceedings", {"en": "Peer-reviewed conference papers", "de": "Begutachtete Konferenzbeiträge", "ja": "査読付き会議論文"}),
     ("talk", {"en": "Conference talks", "de": "Konferenzvorträge", "ja": "学会口頭発表"}),
     ("poster", {"en": "Conference posters", "de": "Konferenzposter", "ja": "学会ポスター発表"}),
