@@ -43,6 +43,11 @@ PUBLICATIONS = [
 
     # ----- Preprints -----
     dict(year=2026, type="preprint", theme="infostruct",
+         title="The Interplay of Word Order and Information Status in German and Korean",
+         authors="Torsten Kai Jachmann, Heiner Drenhaus, Francesca Delogu, Hyungu Kang, Myeongju Lee, Matthew W. Crocker",
+         venue="Preprint, November 2026",
+         links=[]),
+    dict(year=2026, type="preprint", theme="infostruct",
          title="Word Order and Information Status Effects in German: An Expectation-based Perspective",
          authors="Torsten Kai Jachmann, Francesca Delogu, Matthew W. Crocker, Heiner Drenhaus",
          venue="Preprint, April 2026",
